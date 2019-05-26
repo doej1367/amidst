@@ -45,7 +45,8 @@ public class WorldFilterJson_MatchAll {
 	public WorldFilter createWorldFilter() {
 		// TODO: the size is 0, because this filter will never use its biome
 		// data
-		return new WorldFilter_MatchAll(0, createFilterList());
+		// TODO fill biomeFilters and structureFilters with data
+		return new WorldFilter_MatchAll(512, createFilterList());
 	}
 
 	public Optional<WorldFilter> createValidWorldFilter() {
