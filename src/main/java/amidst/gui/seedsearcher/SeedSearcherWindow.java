@@ -127,6 +127,7 @@ public class SeedSearcherWindow {
 
 	@CalledOnlyBy(AmidstThread.EDT)
 	private Optional<SeedSearcherConfiguration> createSeedSearcherConfiguration() {
+		// TODO no filters seem to be recognized. And I have no idea where to add those...
 		return WorldFilterJson_MatchAll
 				.from(searchQueryTextArea.getText())
 				.flatMap(WorldFilterJson_MatchAll::createValidWorldFilter)
